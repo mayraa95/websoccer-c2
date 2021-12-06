@@ -18,7 +18,7 @@ export class StandingsComponent implements OnInit {
   public Standings : Ranking[];
 
   constructor(private _titleService:Title, private _soccerService: SoccerService) {
-    this._titleService.setTitle('Pertandingan Sepakbola Negara Akoeh');
+    this._titleService.setTitle('Pertandingan Sepakbola Dunia');
     this.MyTeams=[];
     this.MySchedule=[];
     this.Standings=[];

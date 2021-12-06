@@ -7,16 +7,16 @@ export const SEASON_SCHEDULE:Schedule [] = [
     RefName:'Joko', notes:'pertandingan-overtime'},
     {id:2, PlayingDate: new Date(2021,8,11),HomeTeam: 'Persipon',
     AwayTeam:'RRQ',HomeScore:3, AwayScore:5,
-    RefName:'Sukasjo', notes:'Pertandingan melelahkan'},
+    RefName:'Sukasjo', notes:'Pertandingan terdekat'},
     {id:3, PlayingDate: new Date(2021,8,12),HomeTeam: 'Evos',
     AwayTeam:'Persis Solo',HomeScore:2, AwayScore:0,
     RefName:'Joko', notes:'Pertandingannya agak aneh'},
     {id:4, PlayingDate: new Date(2021,8,13),HomeTeam: 'Persipon',
     AwayTeam:'Persija',HomeScore:3, AwayScore:0,
-    RefName:'Sukasjo', notes:'pertandingan dimenangkan persipon'},
+    RefName:'Sukasjo', notes:'pertandingan dimenangkan rrq'},
     {id:5, PlayingDate: new Date(2021,8,14),HomeTeam: 'MU',
     AwayTeam:'Real Madrid',HomeScore:2, AwayScore:4,
-    RefName:'Taufik', notes:'pertandingan overtime'},
+    RefName:'Taufik', notes:'pertandingan bola'},
 ]
 
 export const TEAMS: Team [] = [

@@ -23,7 +23,7 @@ export class ScoringsComponent implements OnInit {
   public SeasonStart:Date = new Date;
   public CurrentRole:number = 1;
   constructor(private _soccerService: SoccerService) {
-    this.LeagueName= "Over 30 Mens league";
+    this.LeagueName= "Pertandingan Sepak Bola";
     this.MySchedule = [];
     this.HomeTeam = "";
     this.AwayTeam = "";

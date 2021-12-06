@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import {ViewEncapsulation} from '@angular/core';
 //our application service and interfaces
-import {Schedule} from '../interface/schedule';
+import {Schedule} from 'src/interface/schedule';
 import {SoccerService} from '../service/SoccerService';
 
 

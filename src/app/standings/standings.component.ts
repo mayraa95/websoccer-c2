@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Schedule } from '../interface/schdeules';
-import { Team } from '../interface/team';
-import { Ranking } from '../interface/ranking';
+import { Schedule } from 'src/interface/schedule';
+import { Team } from 'src/interface/team';
+import { Ranking } from 'src/interface/ranking';
 import {SoccerService} from '../service/SoccerService';
 
 @Component({
@@ -53,12 +53,12 @@ export class StandingsComponent implements OnInit {
     var TeamAt:number;
     this.Standings = [];
     this.MySchedule.forEach(element => {
-      if(element.playingDate < curDate && element.HomeScore>=0){
+      if(element.PlayingDate < curDate && element.HomeScore>=0){
         TeamAt = this.FindTeam(element.HomeTeam);
         if(TeamAt < 0){
           this.Standings.push({
             TeamName:element.AwayTeam,
-            GamesPlayed:0,wins:0,Ties:0,GoalsFor:0,GoalsAgaints:0
+            GamesPlayed:0,Winds:0,Ties:0,GoalsFor:0,GoalsAgaints:0
           })
           TeamAt = this.Standings.length-1;
         }
@@ -74,14 +74,14 @@ export class StandingsComponent implements OnInit {
         this.Standings[TeamAt].GoalsAgaints += element.AwayScore;
         //win menang
         if(element.HomeScore>element.AwayScore){
-          this.Standings[TeamAt].wins++;
+          this.Standings[TeamAt].Winds++;
         }
     }
     if(HomeAway=='A'){
       this.Standings[TeamAt].GoalsFor += element.AwayScore;
       this.Standings[TeamAt].GoalsFor += element.HomeScore;
       if(element.AwayScore>element.HomeScore){
-        this.Standings[TeamAt].wins++;
+        this.Standings[TeamAt].Winds++;
       }
     }
     if(element.HomeScore==element.AwayScore){

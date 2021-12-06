@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { SEASON_SCHEDULE, TEAMS } from "./scheduleData";
+import { SEASON_SCHEDULE, TEAMS } from "./ScheduleData";
 
 
 @Injectable(
